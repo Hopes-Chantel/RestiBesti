@@ -1,3 +1,5 @@
+// load the env consts
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
@@ -8,7 +10,12 @@ const passport = require('passport');
 const methodOverride = require('method-override');
 const indexRoutes = require('./routes/index');
 // load the env consts
-require('dotenv').config();
+
+
+// console.log(process.env.GOOGLE_CLIENT_ID);
+// console.log(process.env.GOOGLE_SECRET);
+// console.log(process.env.GOOGLE_CALLBACK);
+
 
 // create the Express app
 const app = express();
