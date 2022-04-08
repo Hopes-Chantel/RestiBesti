@@ -24,6 +24,8 @@ const app = express();
 require('./config/database');
 // configure Passport
 require('./config/passport');
+const indexRouter = require('./routes/index');
+const restaurantRouter = require('./routes/restaurants');
 
 
 
@@ -56,7 +58,8 @@ app.use(function (req, res, next) {
 });
 
 // mount all routes with appropriate base paths
-app.use('/', indexRoutes);
+app.use('/', indexRouter); //localhost:3000
+app.use('/restaurants', restaurantRouter);
 
 
 // invalid request, send 404 page
