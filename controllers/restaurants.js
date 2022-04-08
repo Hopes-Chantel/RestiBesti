@@ -1,24 +1,24 @@
 const Restaurant = require("../models/restaurant");
 
-//On the Movies show page, 
-// we want a dropdown with all the performers
-// that exist that are not in the particular movie already
+
+
 function show(req, res) {
-    Restaurant.findById(req.params.id)
-         res.render('restaurants/show', {
-             restaurant,
-         });
-       };
+    Restaurant.findById(req.params.id, function(err, restaurant) {
+        res.render('restaurants/show', {
+            restaurant,
+        });
+        });
+        };
   
-  function newMovie(req, res) {
+  function newRes(req, res) {
     res.render("restaurants/new", { title: "Add Restaurant" });
   }
   
   function index(req, res) {
   
     console.log(req.user, '< - req.user')
-    Restaurant.find({}, function (err, movies) {
-        res.render("restaurants/index", {
+    Restaurant.find({}, function (err, restaurants) {
+        res.render("/index", {
           // <-  this refers to the view folder, to find the page we want to send
           // back to the client
           restaurants,
@@ -38,7 +38,7 @@ function show(req, res) {
   }
   
   module.exports = {
-    new: newMovie,
+    new: newRes,
     create,
     index,
     show,

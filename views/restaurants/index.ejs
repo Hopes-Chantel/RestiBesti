@@ -9,10 +9,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
-<body>
+<body class="homepage">
   <nav>
     <% if (user) { %>
-        <a href="/logout">LOG OUT</a>
+        <a href="/logout" class="logout">LOG OUT</a>
     <% } else { %>
       <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
     <% } %>
@@ -24,23 +24,9 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <h1>RestiBesti</h1>
-  <h2>A curated list of my favorite NYC restaurants</h2>
-  <a href="/restaurants/new" >All Restaurants </a>
-  <a href="/aboutUs" class="aboutus">About Us</a>
-  <body>
-    <div class="container">
-        <div class="Header"></div>
-        <div class="Body"></div>
-        <div class="footer"></div>
-        <div class="img1"><a href="/restaurant/a">DETAILS FOR RESTAURANT </a>A</div>
-        <div class="img2"><a href="/restaurant/a">DETAILS FOR RESTAURANT </a>B</div>
-        <div class="img3"><a href="/restaurant/a">DETAILS FOR RESTAURANT </a>C</div>
-        <div class="img4"><a href="/restaurant/a">DETAILS FOR RESTAURANT </a>D</div>
-        <div class="img5"><a href="/restaurant/a">DETAILS FOR RESTAURANT </a>E</div>
-        <div class="img6"><a href="/restaurant/a">DETAILS FOR RESTAURANT </a>F</div>
-    </div>
-  </body>
+  <h2>A curated list of our favorite NYC restaurants</h2>
 </html>
+</body>
 
 
 
