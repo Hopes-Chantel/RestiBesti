@@ -39,9 +39,12 @@ const restaurantSchema = new Schema({
     type: String,
     enum: ['Italian','American','Bar','Meditteranean','Indian','Latin','Soul Food','Caribbean','Korean','Chinese','Asian Fusion','Bistro','Cafe','French','Ethiopian','Japanese']
       },
-  reviews: [reviewSchema],//One movie has many reviews
+  reviews: [reviewSchema],//One restaurant has many reviews
 }, {
   timestamps: true
 });
 
 module.exports = mongoose.model('Restaurant', restaurantSchema);
+
+
+

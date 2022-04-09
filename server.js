@@ -30,6 +30,7 @@ const aboutRouter = require('./routes/aboutus')
 
 
 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -62,6 +63,7 @@ app.use(function (req, res, next) {
 app.use('/', indexRouter); //localhost:3000
 app.use('/restaurants', restaurantRouter);
 app.use('/aboutus', aboutRouter);
+
 
 
 // invalid request, send 404 page
