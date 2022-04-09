@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/movies" method="POST">
+  <label>Restaurant Name:</label>
+  <input type="text" name="name">
+  <label>Year Opened:</label>
+  <input type="text" name="dateOpened">
+  <label>NYC Boro</label>
+  <select name="nycBoro">
+    <option value="QNS">QNS</option>
+    <option value="BKLYN">BKLYN</option>
+    <option value="MAN">MAN</option>
+    <option value="BX">BX</option>
+  </select>
+  <label>Type of Cuisine:</label>
+  <input type="text" name="foodType">
+  <input type="checkbox" name="Would Recommend" checked>
+  <input type="submit" value="Add Restaurant">
+</form>
+

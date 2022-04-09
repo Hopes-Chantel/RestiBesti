@@ -5,7 +5,7 @@ const isLoggedIn = require('../config/auth')
 	
 // GET /restaurants/new
 // GET /Restaurants/new
-router.get('/info', restaurantsCtrl.new);
+router.get('/new',isLoggedIn, restaurantsCtrl.new);
 //Restaurants/ID
 router.get('/:id', restaurantsCtrl.show);
 // POST /Restaurants

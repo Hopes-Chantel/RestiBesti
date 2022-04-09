@@ -34,7 +34,6 @@ const restaurantSchema = new Schema({
     },
   foodType: {
     type: String,
-    enum: ['Italian','American','Bar','Meditteranean','Indian','Latin','Soul Food','Caribbean','Korean','Chinese','Asian Fusion','Bistro','Cafe','French','Ethiopian','Japanese']
       },
   reviews: [reviewSchema],//One restaurant has many reviews
 }, {
