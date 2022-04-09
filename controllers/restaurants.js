@@ -10,10 +10,10 @@ function show(req, res) {
         });
         };
   
-  function newRev(req, res) {
-    res.render("restaurants/info", { title: "Res Info" });
-  }
-  
+  function newInfo(req, res) {
+      res.render("restaurants/info", { title: "Res Info" });
+   };
+
 
 
   function index(req, res) {
@@ -40,7 +40,7 @@ function show(req, res) {
   }
   
   module.exports = {
-    new: newRev,
+    new: newInfo,
     create,
     index,
     show,

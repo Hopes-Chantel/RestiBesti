@@ -170,7 +170,6 @@ h2{
     "Photobar Text"
     "footer footer";
 }
-
 .Header2 {
   grid-area: Header;
   text-align: center;
@@ -213,3 +212,38 @@ h2{
    background-image: url(https://i.ibb.co/T1rJrgw/resti.jpg);
    background-size: cover;
  }
+
+
+#add-review-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  color: white;
+  font-family: 'Anek Gujarati';
+  justify-content: center;
+}
+
+#add-review-form input[type="submit"] {
+  width: 20rem;
+  grid-column: 2 / 3;
+  margin-bottom: 2rem;
+}
+.infopage {
+  background-color: black;
+  font-size: 20px;
+
+}
+ .review-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoheader{
+font-size: 40px;
+}
+.nav{
+color: white;
+font-family: 'Anek Gujarati';
+text-decoration: none;
+}

@@ -27,9 +27,6 @@ const restaurantSchema = new Schema({
   },
   dateOpened: {
     type: Number,
-    default: function () {
-      return new Date().getFullYear();
-    }
   },
   nycBoro: {
     type: String,
