@@ -21,6 +21,9 @@ const reviewSchema = new Schema({
 
 
 const restaurantSchema = new Schema({
+  content:{
+    type: String,
+  },
   name: {
     type: String,
     required: true

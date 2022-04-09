@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<form id="new-form" action="/movies" method="POST">
+<form id="new-form" action="/restaurants" method="POST">
   <label>Restaurant Name:</label>
   <input type="text" name="name">
   <label>Year Opened:</label>
@@ -14,7 +14,7 @@
   </select>
   <label>Type of Cuisine:</label>
   <input type="text" name="foodType">
-  <input type="checkbox" name="Would Recommend" checked>
+  <label>Restaurant Info:</label>
+  <input type="text" name="content">
   <input type="submit" value="Add Restaurant">
 </form>
-

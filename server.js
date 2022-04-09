@@ -8,7 +8,8 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const passport = require('passport');
 const methodOverride = require('method-override');
-const indexRoutes = require('./routes/index');
+const indexRouter = require('./routes/index');
+const reviewsRouter = require('./routes/reviews');
 // load the env consts
 
 
@@ -24,7 +25,6 @@ const app = express();
 require('./config/database');
 // configure Passport
 require('./config/passport');
-const indexRouter = require('./routes/index');
 const restaurantRouter = require('./routes/restaurants');
 const aboutRouter = require('./routes/aboutus')
 
@@ -62,6 +62,7 @@ app.use(function (req, res, next) {
 // mount all routes with appropriate base paths
 app.use('/', indexRouter); //localhost:3000
 app.use('/restaurants', restaurantRouter);
+app.use('/', reviewsRouter); // Nested resources aka reviews, they are always mounted in server.js
 app.use('/aboutus', aboutRouter);
 
 
