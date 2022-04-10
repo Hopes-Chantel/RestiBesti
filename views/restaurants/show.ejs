@@ -11,25 +11,24 @@
   </thead>
   <table>
     <thead>
-        <th>Restaurant Name</th>
         <tbody>
-          <tbody>
+          <tbody class="img" class="navi">
             <% restaurant.forEach(function(r) { %>
                 <tr>
                     <td><%= r.name %></td>
+                    <td><a href="/restaurants/<%= r._id %>">DETAILS</a></td>
                 </tr>
             <% }); %>    
         </tbody>
     </table>
       </tbody>
   </table>
-<!--     
  <div class="container">
         <div class="Header"></div>
         <div class="Body"></div>
         <div class="footer"></div>
-        <div class="img1"><a class=navi href="/restaurants/info">Botte Bar </a></div>
-        <div class="img2"><a class=navi href="/restaurants/info">Anejo Taqueria </a></div>
+        <!-- <div class="img1"><a class=navi href="/restaurants/info"> -->
+        <!-- <div class="img2"><a class=navi href="/restaurants/info">Anejo Taqueria </a></div>
         <div class="img3"><a class=navi href="/restaurants/info">Oliver's Astoria </a></div>
         <div class="img4"><a class=navi href="/restaurants/info">RH Rooftop </a></div>
         <div class="img5"><a class=navi href="/restaurants/info">Via Vai </a></div>
@@ -37,6 +36,6 @@
     </div>
   </body>
 </html> -->
- 
+
 
 
