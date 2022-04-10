@@ -19,13 +19,7 @@ function create(req, res) {
         });
         });
         };
-        // function show(req, res) {
-        //   Restaurant.findById(req.params.id, function(err, restaurant) {
-        //       res.render('restaurants/show', {
-        //           title: 'Restaurant detail', restaurant: restaurant
-        //       });
-        //       });
-        //       };
+      
   
   function newRes(req, res) {
       res.render("restaurants/new", { title: "Add Restaurant" });
