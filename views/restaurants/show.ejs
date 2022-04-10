@@ -8,12 +8,23 @@
   <br>
   <a href="/aboutus" class="aboutus">About Us</a>
   <body class="resBackground">
-
-    <section id="show-page">
-     
-
-
-    <!-- <div class="container">
+  </thead>
+  <table>
+    <thead>
+        <th>Restaurant Name</th>
+        <tbody>
+          <tbody>
+            <% restaurant.forEach(function(r) { %>
+                <tr>
+                    <td><%= r.name %></td>
+                </tr>
+            <% }); %>    
+        </tbody>
+    </table>
+      </tbody>
+  </table>
+<!--     
+ <div class="container">
         <div class="Header"></div>
         <div class="Body"></div>
         <div class="footer"></div>
@@ -25,7 +36,7 @@
         <div class="img6"><a class=navi href="/restaurants/info">The Grand</a></div>
     </div>
   </body>
-</html>
- -->
+</html> -->
+ 
 
 

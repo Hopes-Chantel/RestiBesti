@@ -8,8 +8,6 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const passport = require('passport');
 const methodOverride = require('method-override');
-const indexRouter = require('./routes/index');
-const reviewsRouter = require('./routes/reviews');
 // load the env consts
 
 
@@ -27,6 +25,8 @@ require('./config/database');
 require('./config/passport');
 const restaurantRouter = require('./routes/restaurants');
 const aboutRouter = require('./routes/aboutus')
+const indexRouter = require('./routes/index');
+const reviewsRouter = require('./routes/reviews');
 
 
 

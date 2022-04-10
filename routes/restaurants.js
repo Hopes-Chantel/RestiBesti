@@ -3,7 +3,7 @@ const router = express.Router();
 const restaurantsCtrl = require('../controllers/restaurants');
 const isLoggedIn = require('../config/auth')
 	
-// GET /restaurants/new
+router.get('/', restaurantsCtrl.index);
 // GET /Restaurants/new
 router.get('/new',isLoggedIn, restaurantsCtrl.new);
 //Restaurants/ID
