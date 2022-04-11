@@ -58,7 +58,7 @@
 
 .img { 
   /* grid-area: 2 / 3 / 3 / 4;  */
-  background-color: black;
+  background-color: rgb(12,12,12,.6);
   width: 260px;
   align-items: center; 
   justify-content: center;
@@ -212,94 +212,93 @@ color: white;
 font-family: 'Anek Gujarati';
 text-decoration: none; 
 } 
+
 .detail-button {
-	text-decoration:none;
-	font-family:'Anek Gujarati';
-	box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 3px 2px;
-	o-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 3px 2px;
-	-moz-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 3px 2px;
-	-webkit-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 3px 2px;
-	background:#969696;
-	background:-o-linear-gradient(90deg, #969696, #08263d);
-	background:-moz-linear-gradient( center top, #969696 5%, #08263d 100% );
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #969696), color-stop(1, #08263d) );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#08263d');
-	background:-webkit-linear-gradient(#969696, #08263d);
-	background:-ms-linear-gradient(#969696, #08263d);
-	background:linear-gradient(#969696, #08263d);
-	text-indent:0px;
-	line-height:28px;
-	-moz-border-radius:0 25px 25px 0;
-	-webkit-border-radius:0 25px 25px 0;
-	border-radius:0 25px 25px 0;
-	text-align:center;
-	vertical-align:middle;
-	display:inline-block;
-	font-size:20px;
-	color:#ffffff;
-	width:187px;
-	height:28px;
-	padding:13px;
-	text-shadow:#000000 2px 2px 0px;
-	border-color:#000000;
-	border-width:2px;
-	border-style:solid;
+backface-visibility: hidden;
+position: relative;
+cursor: pointer;
+display: inline-block;
+white-space: nowrap;
+background: rgba(42.26814516129033%,42.04165170419964%,42.076742239805235%);
+border-radius: 36px;
+border: 0px solid #0f0d0d;
+border-width: 0px 0px 4px 0px;
+padding: 10px 20px 10px 20px;
+color: #fff;
+font-size: initial;
+font-family: 'Anek Gujarati';
+font-weight: 900;
+text-decoration: none;
 }
-
-.detail-button:active {
-	box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 0 2px;
-	o-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 0 2px;
-	-moz-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 0 2px;
-	-webkit-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 0 2px;
-	position:relative;
-	top:3px
+.detail-button > div {
+color: #999;
+font-size: 10px;
+font-family: Helvetica Neue;
+font-weight: initial;
+font-style: normal;
+text-align: center;
+margin: 0px 0px 0px 0px
 }
-
-.detail-button:hover {
-	background:#08263d;
-	background:-o-linear-gradient(90deg, #08263d, #969696);
-	background:-moz-linear-gradient( center top, #08263d 5%, #969696 100% );
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #08263d), color-stop(1, #969696) );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#08263d', endColorstr='#969696');
-	background:-webkit-linear-gradient(#08263d, #969696);
-	background:-ms-linear-gradient(#08263d, #969696);
-	background:linear-gradient(#08263d, #969696);
+.detail-button > i {
+  font-size: 1em;
+border-radius: 0px;
+border: 0px solid transparent;
+border-width: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+position: static
 }
-
+.detail-button > .ld {
+  font-size: initial
+}
 
 .details-header {
   border-radius: 25px;
   margin-left: 33%;
   margin-right: 33%;
-  background-color: rgb(218, 205, 194);
-  opacity: 0.5;
+  background-color: rgb(218, 205, 194,0.6);
+  width: 100;
   font-family: 'Anek Gujarati';
   color: black;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 
 }
 
 .resInfo{
   font-family: 'Anek Gujarati';
-  text-decoration: underline;
   color: black;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bolder;
+  border-radius: 25px;
+  background-color: rgb(46, 85, 78,.7);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 10px;
+  width: 225px;
 }
 .response {
 
-    font-family: 'Anek Gujarati';
-    color: black;
-    font-size: 28px;
-    font-weight: bolder;
+  font-family: 'Anek Gujarati';
+  color: black;
+  font-size:26px;
+  font-weight: bolder;
+  background-color: rgb(209, 198, 185,.7);
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 10px;
+  width: 200px;
   }
 .content{
   width: 500px;
   height: 250px;
 }
 .resDetail{
-  margin-left: 100px;
+  margin-left: 33%;
+  margin-right: 33%;
+  text-align: left;
+  align-content: center;
 }
 .new-form{
   text-align: left;
@@ -320,10 +319,14 @@ text-decoration: none;
 .contrast{
   justify-content: center;
   border-radius: 25px;
-  background-color: rgb(152, 60, 49);
+  background-color: rgb(152, 60, 49,0.6);
   background-position: left top;
   background-repeat: repeat;
   padding: 10px;
   width: 200px;
   height: 150px;
+}
+.details-body{
+  background-image: url(https://i.ibb.co/1XVvCjD/IMAGE.jpg);
+  background-size: cover
 }
