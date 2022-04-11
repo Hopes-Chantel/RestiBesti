@@ -29,7 +29,7 @@
   display: flex;
   font-family: 'Anek Gujarati', sans-serif;
   justify-content: right;
-  /* align-items: center; */
+  align-items: center;
   height: 34px;
   font-size: 20px;
   color: white;
@@ -54,7 +54,7 @@
 }
 .footer { 
   grid-area: 4 / 1 / 5 / 4;
- }
+}
 
 .img { 
   grid-area: 2 / 3 / 3 / 4; 
@@ -67,7 +67,7 @@
   font-size: 30px;
   color: white;
   
-}
+} 
 h1{
   text-align: center;
   font-family: 'Anek Gujarati', sans-serif;
@@ -105,12 +105,28 @@ h2{
 .all {
   color: black;
 }
-.container2 {  display: grid;
+ .container2 {
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: 1fr 5fr 1fr; 
+    gap: 18px 18px; 
+    grid-template-areas: 
+      "Header Header ."
+      ". Restaurants ."
+      "footer footer ."; 
+    justify-content: stretch; 
+    align-content: center; 
+  }
+  .Header { grid-area: Header; }
+  .footer { grid-area: footer; }
+  .img { grid-area: Restaurants; } 
+
+ .container2 {  display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 5fr 1fr;
   gap: 18px 18px;
   grid-auto-flow: row;
-  justify-content: stretch;
+  justify-content: center;
   align-content: center;
   grid-template-areas:
     "Header Header"
@@ -166,8 +182,8 @@ h2{
   color: white;
   font-family: 'Anek Gujarati';
   justify-content: center;
-}
-
+} */
+ 
 #add-review-form input[type="submit"] {
   width: 20rem;
   grid-column: 2 / 3;
@@ -187,8 +203,8 @@ h2{
 .infoheader{
 font-size: 40px;
 }
-.nav{
+ .nav{
 color: white;
 font-family: 'Anek Gujarati';
-text-decoration: none;
-}
+text-decoration: none; 
+} 
