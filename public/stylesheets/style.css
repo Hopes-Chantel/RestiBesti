@@ -268,9 +268,15 @@ text-decoration: none;
 
 
 .details-header {
+  border-radius: 25px;
+  margin-left: 33%;
+  margin-right: 33%;
+  background-color: rgb(218, 205, 194);
+  opacity: 0.5;
   font-family: 'Anek Gujarati';
   color: black;
-  font-size: 80px;
+  font-size: 60px;
+  text-align: center;
 
 }
 
@@ -294,4 +300,30 @@ text-decoration: none;
 }
 .resDetail{
   margin-left: 100px;
+}
+.new-form{
+  text-align: left;
+  font-family: 'Anek Gujarati';
+  color: black;
+  font-size: 22px;
+  font-weight: bolder;
+  margin-left: 33.3%;
+}
+.text{
+  width: 400px;
+  height: 400px;
+}
+.newBackground{
+  background-image: url(https://i.ibb.co/p3gSsHQ/bespokeonly-9ff6dc8734354b13a9a3ac5b33f2b0ae.jpg);
+  background-size: 100%;
+}
+.contrast{
+  justify-content: center;
+  border-radius: 25px;
+  background-color: rgb(152, 60, 49);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
 }

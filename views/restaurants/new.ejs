@@ -1,20 +1,24 @@
 <%- include('../partials/header') %>
-
-<form id="new-form" action="/restaurants" method="POST">
-  <label>Restaurant Name:</label>
-  <input type="text" name="name">
-  <label>Year Opened:</label>
-  <input type="text" name="dateOpened">
-  <label>NYC Boro</label>
+<h3 class="details-header"> Add New Restaurant</h3>
+<body class="newBackground">
+  <div class="newBody">
+<form class ="new-form"id="new-form" action="/restaurants" method="POST">
+  <label class="contrast">Restaurant Name:</label>
+  <input type="text" name="name"><br><br>
+  <label class="contrast">Year Opened:</label>
+  <input type="text" name="dateOpened"><br><br>
+  <label class="contrast">NYC Boro</label>
   <select name="nycBoro">
     <option value="QNS">QNS</option>
     <option value="BKLYN">BKLYN</option>
     <option value="MAN">MAN</option>
     <option value="BX">BX</option>
-  </select>
-  <label>Type of Cuisine:</label>
-  <input type="text" name="foodType">
-  <label>Restaurant Info:</label>
-  <input type="text" name="content">
+  </select><br><br>
+  <label class="contrast">Type of Cuisine:</label>
+  <input type="text" name="foodType"><br><br>
+  <label class="contrast">Restaurant Info:</label><br><br>
+  <input class="text" type="text" name="content" ><br>
   <input type="submit" value="Add Restaurant">
 </form>
+</div>
+</body>
