@@ -270,12 +270,28 @@ text-decoration: none;
 .details-header {
   font-family: 'Anek Gujarati';
   color: black;
+  font-size: 80px;
 
 }
 
 .resInfo{
   font-family: 'Anek Gujarati';
+  text-decoration: underline;
   color: black;
   font-size: 30px;
   font-weight: bolder;
+}
+.response {
+
+    font-family: 'Anek Gujarati';
+    color: black;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+.content{
+  width: 500px;
+  height: 250px;
+}
+.resDetail{
+  margin-left: 100px;
 }

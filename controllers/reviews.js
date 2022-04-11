@@ -21,7 +21,7 @@ function deleteReview(req, res, next){
 		// movieDocument.reviews.remove(req.params.id)
 		restaurantDocument.save(function(err){
 			if(err) next(err); // next(err) passes it to the express generator err handler
-			res.redirect(`/restaurants/${restaurantDocument._id}`)
+			res.redirect(`/${restaurantDocument._id}`)
 		})
 
 
@@ -40,7 +40,7 @@ function create(req, res) {
   // Find the movie from the database
   // Movie.findById is a mongoose Method
   Restaurant.findById(req.params.id, function (err, restaurantFromTheDatabase) {
-    // add the review (req.body) to the movieFromTheDatabase
+    // add the review (req.body) to the restaurantFromTheDatabase
 
     // Add the user-centric info to req.body (the new review)
     req.body.user = req.user._id;
@@ -53,7 +53,7 @@ function create(req, res) {
       console.log(restaurantFromTheDatabase);
       // then we want to respond to the client!
       // redirect them to a page, What page makes sense to redirect?
-      res.redirect(`/restaurants/${restaurantFromTheDatabase._id}`);
+      res.redirect(`/${restaurantFromTheDatabase._id}`);
     });
   });
 

@@ -1,4 +1,4 @@
-
+<%- include('../partials/header') %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,17 +14,17 @@
 </head>
 <body>
     <h2 class="details-header">Restaurant Information</h2>
-    <section id="show-page">
+    <section class="resDetail" id="show-page">
         <div class="resInfo">Restaurant Name : </div>
-        <div>
+        <div class="response">
         <%= restaurant.name %>
         </div>
         <div class="resInfo">Open Since: </div>
-    <div>
+    <div class="response">
     <%= restaurant.dateOpened %>
     </div>
     <div class="resInfo">Type of Cuisine: </div>
-    <div>
+    <div class="response">
     <%= restaurant.foodType %>
     </div>
 </body>
@@ -36,7 +36,9 @@
 
     <form id="add-review-form" method="POST" action="/restaurants/<%= restaurant._id %>/reviews">
     <label>Review:</label>
-    <textarea name="content"></textarea>
+    <div class="_secondary">
+        <div class="form">
+    <textarea class= "content" name="content" rows="10"></textarea>
     <label>Rating:</label>
     <select name="rating">
         <option value="1">1</option>
