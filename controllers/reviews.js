@@ -10,7 +10,7 @@ function deleteReview(req, res, next){
 	// Find the movie with the review!
 	Restaurant.findOne({'reviews._id': req.params.id}, function(err, restaurantDocument){
 		// find the subdocument itself, find the review in the movieDocument, that has the same id as our req.params.id
-		const review = movieDocument.reviews.id(req.params.id);
+		const review = restaurantDocument.reviews.id(req.params.id);
 		// If the review wasn't made by the user redirect them back to the same page
 		if(!review.user.equals(req.user._id)) return res.redirect(`/restaurants/${restaurantDocument._id}`);
 

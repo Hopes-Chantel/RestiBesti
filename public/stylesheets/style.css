@@ -39,8 +39,8 @@
 }
 .container {
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 0.5fr 1fr 1fr 0.25fr; 
+  /* grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 1fr 1fr 0.25fr;  */
   gap: 18px 18px; 
   align-items: center; 
   justify-content: center; 
@@ -50,16 +50,16 @@
   grid-area: 1 / 1 / 2 / 4; 
 }
 .Body { 
-  grid-area: 2 / 1 / 4 / 4; 
+  /* grid-area: 2 / 1 / 4 / 4;  */
 }
 .footer { 
   grid-area: 4 / 1 / 5 / 4;
 }
 
 .img { 
-  grid-area: 2 / 3 / 3 / 4; 
+  /* grid-area: 2 / 3 / 3 / 4;  */
   background-color: black;
-  height: 40vh;
+  width: 260px;
   align-items: center; 
   justify-content: center;
   text-align: center;
@@ -105,7 +105,7 @@ h2{
 .all {
   color: black;
 }
- .container2 {
+.container2 {
     display: grid; 
     grid-template-columns: 1fr 2fr 1fr; 
     grid-template-rows: 1fr 5fr 1fr; 
@@ -121,7 +121,7 @@ h2{
   .footer { grid-area: footer; }
   .img { grid-area: Restaurants; } 
 
- .container2 {  display: grid;
+.container2 {  display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 5fr 1fr;
   gap: 18px 18px;
@@ -140,39 +140,39 @@ h2{
   font-size: 100px;
   margin: 0;
   color:rgb(8, 4, 4);
-   }
+  }
 
 .footer2 {
-   grid-area: footer; 
+  grid-area: footer; 
   }
 .Text {
-   grid-area: Text; 
-   color: black;
-   margin-right: 10vw;
-   text-align: left;
+  grid-area: Text; 
+  color: black;
+  margin-right: 10vw;
+  text-align: left;
   }
 .Photobar { 
   grid-area: Photobar;
- }
- .aboutBackground {
-   background-color: gray;
- }
+}
+.aboutBackground {
+background-color: gray;
+}
 
- .aboutUsImg {
-   width: 500px;
- }
- .navi {
-   color: white;
-   text-decoration: none;
-   font-size: 50px;
-   font-weight: 100px;
-   text-align: center;
-   padding-top: 100px;
- }
- .resBackground{
-   background-image: url(https://i.ibb.co/T1rJrgw/resti.jpg);
-   background-size: cover;
- }
+.aboutUsImg {
+  width: 500px;
+}
+.navi {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 100px;
+  text-align: center;
+  padding-top: 100px;
+}
+  .resBackground{
+  background-image: url(https://i.ibb.co/T1rJrgw/resti.jpg);
+  background-size: cover;
+}
 
 
 #add-review-form {
@@ -183,7 +183,7 @@ h2{
   font-family: 'Anek Gujarati';
   justify-content: center;
 } */
- 
+
 #add-review-form input[type="submit"] {
   width: 20rem;
   grid-column: 2 / 3;
@@ -194,17 +194,75 @@ h2{
   font-size: 20px;
 
 }
- .review-user {
+.review-user {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.review-user img {
+  border-radius: 50%;
+  height: 40px;
+}
 .infoheader{
 font-size: 40px;
 }
- .nav{
+
+.nav{
 color: white;
 font-family: 'Anek Gujarati';
 text-decoration: none; 
 } 
+.detail-button {
+	text-decoration:none;
+	font-family:'Anek Gujarati';
+	box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 3px 2px;
+	o-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 3px 2px;
+	-moz-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 3px 2px;
+	-webkit-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 3px 2px;
+	background:#969696;
+	background:-o-linear-gradient(90deg, #969696, #08263d);
+	background:-moz-linear-gradient( center top, #969696 5%, #08263d 100% );
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #969696), color-stop(1, #08263d) );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#969696', endColorstr='#08263d');
+	background:-webkit-linear-gradient(#969696, #08263d);
+	background:-ms-linear-gradient(#969696, #08263d);
+	background:linear-gradient(#969696, #08263d);
+	text-indent:0px;
+	line-height:28px;
+	-moz-border-radius:0 25px 25px 0;
+	-webkit-border-radius:0 25px 25px 0;
+	border-radius:0 25px 25px 0;
+	text-align:center;
+	vertical-align:middle;
+	display:inline-block;
+	font-size:20px;
+	color:#ffffff;
+	width:187px;
+	height:28px;
+	padding:13px;
+	text-shadow:#000000 2px 2px 0px;
+	border-color:#000000;
+	border-width:2px;
+	border-style:solid;
+}
+
+.detail-button:active {
+	box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 0 2px;
+	o-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 0 2px;
+	-moz-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 0 2px;
+	-webkit-box-shadow:inset #ffffff 0px 8px 8px -1px,#d6d6d6 1px 0 2px;
+	position:relative;
+	top:3px
+}
+
+.detail-button:hover {
+	background:#08263d;
+	background:-o-linear-gradient(90deg, #08263d, #969696);
+	background:-moz-linear-gradient( center top, #08263d 5%, #969696 100% );
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #08263d), color-stop(1, #969696) );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#08263d', endColorstr='#969696');
+	background:-webkit-linear-gradient(#08263d, #969696);
+	background:-ms-linear-gradient(#08263d, #969696);
+	background:linear-gradient(#08263d, #969696);
+}
+</style>
