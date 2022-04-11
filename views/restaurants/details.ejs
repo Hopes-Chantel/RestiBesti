@@ -1,23 +1,29 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100&display=swap" rel="stylesheet">  
     <title>Document</title>
 </head>
 <body>
-    <h1>Restaurant Information</h1>
+    <h2 class="details-header">Restaurant Information</h2>
     <section id="show-page">
-        <div>Restaurant Name : </div>
+        <div class="resInfo">Restaurant Name : </div>
         <div>
         <%= restaurant.name %>
         </div>
-        <div>Open Since: </div>
+        <div class="resInfo">Open Since: </div>
     <div>
     <%= restaurant.dateOpened %>
     </div>
-    <div>Type of Cuisine: </div>
+    <div class="resInfo">Type of Cuisine: </div>
     <div>
     <%= restaurant.foodType %>
     </div>
@@ -39,7 +45,7 @@
         <option value="4">4</option>
         <option value="5">5</option>
     </select>
-    <input type="submit" value="Add Review">
+    <input class= "review-button" type="submit" value="Add Review">
     </form>
 
     <% } %>

@@ -265,4 +265,17 @@ text-decoration: none;
 	background:-ms-linear-gradient(#08263d, #969696);
 	background:linear-gradient(#08263d, #969696);
 }
-</style>
+
+
+.details-header {
+  font-family: 'Anek Gujarati';
+  color: black;
+
+}
+
+.resInfo{
+  font-family: 'Anek Gujarati';
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+}
