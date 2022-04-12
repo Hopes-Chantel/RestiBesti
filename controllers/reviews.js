@@ -1,4 +1,4 @@
-// this is our movie model, which can talk to the database
+
 const Restaurant = require("../models/restaurant");
 
 module.exports = {
@@ -7,9 +7,9 @@ module.exports = {
 };
 
 function deleteReview(req, res, next){
-	// Find the movie with the review!
+	
 	Restaurant.findOne({'reviews._id': req.params.id}, function(err, restaurantDocument){
-		// find the subdocument itself, find the review in the movieDocument, that has the same id as our req.params.id
+		
 		const review = restaurantDocument.reviews.id(req.params.id);
 		// If the review wasn't made by the user redirect them back to the same page
 		if(!review.user.equals(req.user._id)) return res.redirect(`/restaurants/${restaurantDocument._id}`);
@@ -18,7 +18,7 @@ function deleteReview(req, res, next){
 		// 1 way find the review then call remove method
 		review.remove()
 		// remove the review
-		// movieDocument.reviews.remove(req.params.id)
+		
 		restaurantDocument.save(function(err){
 			if(err) next(err); // next(err) passes it to the express generator err handler
 			res.redirect(`/${restaurantDocument._id}`)
