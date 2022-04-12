@@ -39,7 +39,7 @@ function create(req, res) {
   // res.send('hello im hitting the create route in the reviews change me later')
   // Find the movie from the database
   // Movie.findById is a mongoose Method
-  Restaurant.findById(req.params.id, function (err, restaurantFromTheDatabase) {
+  Restaurant?.findById(req.params.id, function (err, restaurantFromTheDatabase) {
     // add the review (req.body) to the restaurantFromTheDatabase
 
     // Add the user-centric info to req.body (the new review)

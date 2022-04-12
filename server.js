@@ -24,10 +24,12 @@ require('./config/database');
 // configure Passport
 require('./config/passport');
 const restaurantRouter = require('./routes/restaurants');
-const aboutRouter = require('./routes/aboutus')
+const aboutRouter = require('./routes/aboutus');
 const indexRouter = require('./routes/index');
 const reviewsRouter = require('./routes/reviews');
 const detailsRouter = require ('./routes/details');
+const rouletteRouter = require('./routes/roulette');
+
 
 
 
@@ -62,9 +64,11 @@ app.use(function (req, res, next) {
 // mount all routes with appropriate base paths
 app.use('/', indexRouter); //localhost:3000
 app.use('/restaurants', restaurantRouter);
+app.use('/roulette', rouletteRouter);
 app.use('/', reviewsRouter); // Nested resources aka reviews, they are always mounted in server.js
 app.use('/aboutus', aboutRouter);
 app.use('/', detailsRouter);
+
 
 
 

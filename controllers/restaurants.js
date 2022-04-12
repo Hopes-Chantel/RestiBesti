@@ -1,3 +1,4 @@
+
 const Restaurant = require("../models/restaurant");
 
 
@@ -11,6 +12,7 @@ function create(req, res) {
       res.redirect('/restaurants/new');
     });
   };
+
 
   function show(req, res) {
     Restaurant.find({}, function (err, restaurant) {
@@ -38,16 +40,16 @@ function create(req, res) {
     });
   }
   
-  function create(req, res) {
-  const restaurant = new Restaurant(req.body);
-    restaurant.save(function(err) {
-      // one way to handle errors
-      if (err) return res.render('restaurants/new');
-      console.log(restaurant);
-      // for now, redirect right back to new.ejs
-      res.redirect('/restaurants/new');
-    });
-  };
+  // function create(req, res) {
+  // const restaurant = new Restaurant(req.body);
+  //   restaurant.save(function(err) {
+  //     // one way to handle errors
+  //     if (err) return res.render('restaurants/new');
+  //     console.log(restaurant);
+  //     // for now, redirect right back to new.ejs
+  //     res.redirect('/restaurants/new');
+  //   });
+  // };
   //   Restaurant.create(req.body, function(err, restaurant){ // < - this function gets invoked when there is a response from mongodb
   // // err is the response from the db if there was an issue // the movie above this, is the document created in the db
   //     if (err) return res.redirect("/restaurants/new");

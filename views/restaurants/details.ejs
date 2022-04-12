@@ -17,22 +17,22 @@
     <section class="resDetail" id="show-page">
         <div class="resInfo">Restaurant Name : </div>
         <div class="response">
-        <%= restaurant.name %>
+        <%= restaurant?.name %>
         </div>
         <div class="resInfo">Open Since: </div>
     <div class="response">
-    <%= restaurant.dateOpened %>
+    <%= restaurant?.dateOpened %>
     </div>
     <div class="resInfo">Type of Cuisine: </div>
     <div class="response">
-    <%= restaurant.foodType %>
+    <%= restaurant?.foodType %>
     </div>
 </body>
 </html>
 <h3>Leave review below:</h3>
 <% if (user) { %>
 
-    <form id="add-review-form" method="POST" action="/restaurants/<%= restaurant._id %>/reviews">
+    <form id="add-review-form" method="POST" action="/restaurants/<%= restaurant?._id %>/reviews">
     <div class="_secondary">
         <div class="form">
         <center class="response">Star Rating:
@@ -53,7 +53,7 @@
 
 
 
-    <% if (restaurant.reviews.length) { %>
+    <% if (restaurant?.reviews.length) { %>
         <table>
         <thead>
             <tr>
@@ -64,7 +64,7 @@
         </thead>
         <tbody>
             <% let total=0 %>
-            <% restaurant.reviews.forEach(function(r) { %>
+            <% restaurant?.reviews.forEach(function(r) { %>
                 <% total +=r.rating %>
                 <tr>
                     <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>"><%= r.userName %></td>
@@ -90,7 +90,7 @@
                     <td colspan="2"></td>
                     <span>Rating:</span>
                     <td><strong>
-                        <%= (total / restaurant.reviews.length).toFixed(1) %>
+                        <%= (total / restaurant?.reviews.length).toFixed(1) %>
                         </strong></td>
                     </tr>
         </tbody>

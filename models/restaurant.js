@@ -26,7 +26,6 @@ const restaurantSchema = new Schema({
   },
   name: {
     type: String,
-    required: true
   },
   dateOpened: {
     type: Number,
