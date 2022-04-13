@@ -12,7 +12,7 @@
 ## Technologies Used:
 
 #### HTML, CSS and Javascript were the coding languages used. RestiBesti is a Full-stack CRUD appicationNode/Express/MongoDB app built from the ground up.
-#### RestiBesti also uses OAuth authentication to implememt basic authorization that restricts access to features that need a logged in user (adding reviews, viewing restaurants).
+#### RestiBesti also uses OAuth authentication to implement basic authorization that restricts access to features that need a logged in user (adding reviews, viewing restaurants).
 
 
 ## Getting Started: Include a link to the deployed app and your Trello board with the project's planning.
