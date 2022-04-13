@@ -15,10 +15,10 @@
   <table>
     <thead>
         <tbody>
-          <tbodyclass="navi">
+          <tbody>
             <% restaurant.forEach(function(r) { %>
               <tr>
-                    <td class="img"><%= r.name %></td></div>
+                    <td class="img"><%= r.name %></td>
                     <td><a class="detail-button"href="/<%= r._id %>">Restaurant Details</a></td>
                 </tr>
             <% }); %>    

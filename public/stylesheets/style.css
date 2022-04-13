@@ -3,22 +3,6 @@
   margin-left: 15px;
 }
 
-.card .card-content .card-title {
-  margin-bottom: 10px;
-}
-
-#search-row form {
-  padding-top: 20px;
-}
-
-.student-name {
-  position: relative;
-  top: -5px;
-}
-
-.collection-item form {
-  margin-top: -5px;
-}
 .logout {
   font-family: 'Anek Gujarati', sans-serif;
   color: white;
@@ -39,8 +23,7 @@
 }
 .container {
   display: grid; 
-  /* grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 0.5fr 1fr 1fr 0.25fr;  */
+  grid-template-columns: 1fr 1fr 1fr; 
   gap: 18px 18px; 
   align-items: center; 
   justify-content: center; 
@@ -49,17 +32,11 @@
 .Header { 
   grid-area: 1 / 1 / 2 / 4; 
 }
-.Body { 
-  /* grid-area: 2 / 1 / 4 / 4;  */
-}
-.footer { 
-  grid-area: 4 / 1 / 5 / 4;
-}
 
 .img { 
-  /* grid-area: 2 / 3 / 3 / 4;  */
   background-color: rgb(12,12,12,.6);
-  width: 260px;
+  width: 300px;
+  height: 50px;
   align-items: center; 
   justify-content: center;
   text-align: center;
@@ -99,7 +76,7 @@ h2{
   text-decoration: none;
 }
 .spontaneous {
-  backdisplay: inline;
+  display: inline;
   font-family: 'Anek Gujarati', sans-serif;
   background-color: rgba(0, 0, 0, 0.7);
   background-size: cover;
@@ -116,7 +93,7 @@ h2{
   text-decoration: none;
 }
 .spontaneous2 {
-  backdisplay: inline;
+  display: inline;
   font-family: 'Anek Gujarati', sans-serif;
   background-color: rgba(0, 0, 0, 0.7);
   background-size: cover;
@@ -149,21 +126,6 @@ h2{
   text-align: center;
   align-items: center;
 }
-.container2 {
-    display: grid; 
-    grid-template-columns: 1fr 2fr 1fr; 
-    grid-template-rows: 1fr 5fr 1fr; 
-    gap: 18px 18px; 
-    grid-template-areas: 
-      "Header Header ."
-      ". Restaurants ."
-      "footer footer ."; 
-    justify-content: stretch; 
-    align-content: center; 
-  }
-  .Header { grid-area: Header; }
-  .footer { grid-area: footer; }
-  .img { grid-area: Restaurants; } 
 
 .container2 {  display: grid;
   grid-template-columns: 1fr 2fr;
@@ -264,7 +226,7 @@ cursor: pointer;
 display: inline-block;
 white-space: nowrap;
 background: rgba(42.26814516129033%,42.04165170419964%,42.076742239805235%);
-border-radius: 36px;
+border-radius: 25px;
 border: 0px solid #0f0d0d;
 border-width: 0px 0px 4px 0px;
 padding: 10px 20px 10px 20px;
