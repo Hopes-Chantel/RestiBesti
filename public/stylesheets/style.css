@@ -65,7 +65,7 @@ h3{
   font-family: 'Anek Gujarati', sans-serif;
   font-size: 60px;
   margin: 0;
-  color:black;
+  color:whitesmoke;
 }
 h4{
   text-align: center;
@@ -369,5 +369,9 @@ position: static
 }
 .details-body{
   background-image: url(https://i.ibb.co/1XVvCjD/IMAGE.jpg);
-  background-size: cover
+  background-size: cover;
+}
+.roulette{
+  background-image: url(https://i.ibb.co/1916t0g/shutterstock-1928243432.jpg);
+  background-size: 100%;
 }
