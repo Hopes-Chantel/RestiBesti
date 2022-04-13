@@ -23,7 +23,7 @@
 }
 .container {
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
+  /* grid-template-columns: 1fr 1fr 1fr;  */
   gap: 18px 18px; 
   align-items: center; 
   justify-content: center; 
@@ -58,6 +58,21 @@ h2{
   font-size: 30px;
   margin: 0;
   color: white;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Anek Gujarati', sans-serif;
+  font-size: 60px;
+  margin: 0;
+  color:black;
+}
+h4{
+  text-align: center;
+  font-family: 'Anek Gujarati', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  color: black;
 }
 .aboutus{
   display: flex;
@@ -224,6 +239,26 @@ backface-visibility: hidden;
 position: relative;
 cursor: pointer;
 display: inline-block;
+white-space: nowrap;
+background: rgba(42.26814516129033%,42.04165170419964%,42.076742239805235%);
+border-radius: 25px;
+border: 0px solid #0f0d0d;
+border-width: 0px 0px 4px 0px;
+padding: 10px 20px 10px 20px;
+color: #fff;
+font-size: initial;
+font-family: 'Anek Gujarati';
+font-weight: 900;
+text-decoration: none;
+}
+
+.detail-button2 {
+backface-visibility: hidden;
+/* position: center;
+text-align: center;
+align-items: center; */
+cursor: pointer;
+/* display: inline-block; */
 white-space: nowrap;
 background: rgba(42.26814516129033%,42.04165170419964%,42.076742239805235%);
 border-radius: 25px;
