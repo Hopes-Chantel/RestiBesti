@@ -1,35 +1,28 @@
-# passport-boilerplate
+# RestiBesti
+
+### Your friendly neighborhood restaurant app. Add your favorite restaurants and leave reviews.
+### Additionally, if the user is feeling spontaneous, they can allow the app to chose a restaurant for them. 
+
+## Screenshot(s): A screenshot of your app's landing page and any other screenshots of interest.
 
 
-This is your passport boilerplate.
+##### ![landing page](https://i.ibb.co/q9hVh2t/Screen-Shot-2022-04-13-at-9-03-50-AM.png)
+##### ![Main Restaurant Page](https://i.ibb.co/9bC9bwC/Screen-Shot-2022-04-13-at-9-04-17-AM.png)
+##### ![Add a Restaurant](https://i.ibb.co/PGcbpwS/Screen-Shot-2022-04-13-at-9-05-49-AM.png)
 
-## Setup 
+## Technologies Used:
 
-1. Clone the repo
-2. Rename the folder to your Project
-3. Delete the `.git` file, when you are in the root of the file, you can press `ls` and you should see a `.git` file, then go ahead and run `rm -rf .git`
+### HTML, CSS and Javascript were the coding languages used. RestiBesti is a Full-stack CRUD appicationNode/Express/MongoDB app built from the ground up.
+### RestiBesti also uses
 
 
-#### Setup your git repo
-0. Setup your `.env` file and add all the things you need! (look at mongoose movies for reference!)
-1. in the project root `git init`
-2. `git add .` to add all the starter code
-3. `git commit -m "setup boilerplate"` 
-4. go to github and create your github and create a repo (Without a readme or liscense you can add that later!)
-5. copy the remote address
-6. In your terminal add the remote `git remote add origin yourGithubRepo'sAddressGoesHere`
-7. `git pull origin master` If a screen pulls up asking you to do something just press `:q` and then `enter` (thats vim btw :) )
-8. `git push origin master`
+## Getting Started: Include a link to the deployed app and your Trello board with the project's planning.
 
-#### Setup your login
+### link to Trello: https://trello.com/b/h2ERjMOM/restibesti
 
-0. Setup your database connection string
-1. Then Setup Your User Model, 
-2. Follow the steps from the lesson plan to get your Google login credentials for your `.env` file (create the file if you haven't), or you can just copy the ones from earlier if you want to reuse them.
-3. Setup the Code in your config passport 
-4. Setup your callback routes in your `routes/index`
-5. Setup a view and test your login!
+### link to deployed applocation: 
 
-#### Make a commit 
+## Next Steps: 
 
-```git commit -m "setup up oauth and User Model"```
+### I would love to use an API or add links to where the user is able to be directed to GrubHub or Seamless where they can order their food. 
+
