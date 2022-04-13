@@ -15,8 +15,7 @@
 #### RestiBesti also uses OAuth authentication to implement basic authorization that restricts access to features that need a logged in user (adding reviews, viewing restaurants).
 
 
-## Getting Started: Include a link to the deployed app and your Trello board with the project's planning.
-
+## Getting Started:
 #### link to Trello: https://trello.com/b/h2ERjMOM/restibesti
 
 #### link to deployed applocation: 
