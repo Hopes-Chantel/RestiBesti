@@ -1,10 +1,9 @@
 # RestiBesti
 
-### Your friendly neighborhood restaurant app. Add your favorite restaurants and leave reviews.
-### Additionally, if the user is feeling spontaneous, they can allow the app to chose a restaurant for them. 
+#### Your friendly neighborhood restaurant app. Add your favorite restaurants and leave reviews.
+#### Additionally, if the user is feeling spontaneous, they can allow the app to chose a restaurant for them. 
 
-## Screenshot(s): A screenshot of your app's landing page and any other screenshots of interest.
-
+## Screenshot(s): 
 
 ##### ![landing page](https://i.ibb.co/q9hVh2t/Screen-Shot-2022-04-13-at-9-03-50-AM.png)
 ##### ![Main Restaurant Page](https://i.ibb.co/9bC9bwC/Screen-Shot-2022-04-13-at-9-04-17-AM.png)
@@ -12,17 +11,17 @@
 
 ## Technologies Used:
 
-### HTML, CSS and Javascript were the coding languages used. RestiBesti is a Full-stack CRUD appicationNode/Express/MongoDB app built from the ground up.
-### RestiBesti also uses
+#### HTML, CSS and Javascript were the coding languages used. RestiBesti is a Full-stack CRUD appicationNode/Express/MongoDB app built from the ground up.
+#### RestiBesti also uses
 
 
 ## Getting Started: Include a link to the deployed app and your Trello board with the project's planning.
 
-### link to Trello: https://trello.com/b/h2ERjMOM/restibesti
+#### link to Trello: https://trello.com/b/h2ERjMOM/restibesti
 
-### link to deployed applocation: 
+#### link to deployed applocation: 
 
 ## Next Steps: 
 
-### I would love to use an API or add links to where the user is able to be directed to GrubHub or Seamless where they can order their food. 
+#### I would love to use an API or add links to where the user is able to be directed to GrubHub or Seamless where they can order their food. 
 
