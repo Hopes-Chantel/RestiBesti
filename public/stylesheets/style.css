@@ -331,11 +331,28 @@ position: static
   padding: 10px;
   width: 200px;
   }
+
+  .editRes{
+    font-family: 'Anek Gujarati';
+    color: black;
+    font-size:20px;
+    font-weight: bolder;
+    background-color: rgb(209, 198, 185,.7);
+    border-radius: 25px;
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 10px;
+    width: 200px;
+    text-decoration: none;
+    text-align:  center;
+
+  }
 .content{
   width: 500px;
   height: 250px;
 }
 .resDetail{
+  font-family: 'Anek Gujarati';
   margin-left: 33%;
   margin-right: 33%;
   text-align: left;
@@ -356,6 +373,19 @@ position: static
 .newBackground{
   background-image: url(https://i.ibb.co/p3gSsHQ/bespokeonly-9ff6dc8734354b13a9a3ac5b33f2b0ae.jpg);
   background-size: 100%;
+}
+
+.edit{
+font-family: 'Anek Gujarati';
+justify-content: center;
+  border-radius: 25px;
+  background-color: rgb(152, 60, 49,0.6);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  font-size: 25px;
 }
 .contrast{
   justify-content: center;

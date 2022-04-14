@@ -19,12 +19,6 @@
 </body>
 </html>
 
-<a id="edit-btn" href="/restaurants/<%= restaurant._id %>/edit">Edit Restaurant</a>
-</form>
-<form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
-    <input id="delete-btn" type="submit" name="" value="Delete Restaurant">
-</form>
-
 
 
 <h4>Leave review below:</h4>
@@ -42,14 +36,17 @@
         <option value="5">5</option>
     </select>
 </center>
-    <textarea class= "content" name="content" rows="10"></textarea>
+    <textarea class= "content" name="content" rows="10"></textarea> <br>
     <input class= "review-button" type="submit" value="Add Review">
     </form>
 
     <% } %>
 
 
-
+  <br> <br> <center> <a class="editRes" href="/restaurants/<%= restaurant._id %>/edit">Edit Restaurant</a> </br> </center> <br>
+ <center> <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
+    <input class="detail-button" type="submit" name="" value="Delete Restaurant">
+</form> </center>
 
     <% if (restaurant?.reviews.length) { %>
         <table>
