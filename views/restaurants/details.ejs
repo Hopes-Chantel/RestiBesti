@@ -18,6 +18,15 @@
     </div>
 </body>
 </html>
+
+<a id="edit-btn" href="/restaurants/<%= restaurant._id %>/edit">Edit Restaurant</a>
+</form>
+<form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
+    <input id="delete-btn" type="submit" name="" value="Delete Restaurant">
+</form>
+
+
+
 <h4>Leave review below:</h4>
 <% if (user) { %>
 

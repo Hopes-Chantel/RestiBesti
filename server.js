@@ -29,6 +29,7 @@ const indexRouter = require('./routes/index');
 const reviewsRouter = require('./routes/reviews');
 const detailsRouter = require ('./routes/details');
 const rouletteRouter = require('./routes/roulette');
+const editRouter = require('./routes/edit');
 
 
 
@@ -68,6 +69,7 @@ app.use('/roulette', rouletteRouter);
 app.use('/', reviewsRouter); // Nested resources aka reviews, they are always mounted in server.js
 app.use('/aboutus', aboutRouter);
 app.use('/', detailsRouter);
+app.use ('/edit', editRouter);
 
 
 

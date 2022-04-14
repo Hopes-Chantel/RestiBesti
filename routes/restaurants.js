@@ -10,6 +10,12 @@ router.get('/new',isLoggedIn, restaurantsCtrl.new);
 router.get('/:id', restaurantsCtrl.show);
 // POST /Restaurants
 router.post('/', restaurantsCtrl.create);
+// GET /Restaurant
+router.get('/:id/edit', restaurantsCtrl.edit);
+// PUT /Restaurant
+router.put('/:id', restaurantsCtrl.update);
+
+router.delete('/:id', restaurantsCtrl.delete);
 	
 module.exports = router;
 

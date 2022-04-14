@@ -13,7 +13,30 @@ function create(req, res) {
     });
   };
 
+  function update(req, res) {
+    Restaurant.findOneAndUpdate(req.params.id,
+        req.body,
+        { new: true },
+        function (err, restaurant) {
+          res.redirect(`/restaurants/${restaurant._id}`);
+        }
+      );
+    }
+    
 
+    function deleteRestaurant(req, res) {
+      Restaurant.findByIdAndDelete(req.params.id, function (err) {
+        res.redirect('/restaurants');
+      });
+    }
+
+    function edit(req, res) {
+      Restaurant.findById(req.params.id, function (err, restaurant) {
+        res.render('restaurants/edit', { restaurant });
+        if (err || !restaurant) return res.redirect('/restaurants');
+      });
+    }
+    
   function show(req, res) {
     Restaurant.find({}, function (err, restaurant) {
         res.render('restaurants/show', {
@@ -27,11 +50,13 @@ function create(req, res) {
       res.render("restaurants/new", { title: "Add Restaurant" });
   };
 
+
+
   function index(req, res) {
   
     console.log(req.user, '< - req.user')
     Restaurant.find({}, function (err, restaurant) {
-        res.render("/index", {
+        res.render("index", {
           // <-  this refers to the view folder, to find the page we want to send
           // back to the client
           restaurant,
@@ -45,5 +70,8 @@ function create(req, res) {
     create,
     index,
     show,
+    update,
+    edit,
+    delete: deleteRestaurant,
   };
   
