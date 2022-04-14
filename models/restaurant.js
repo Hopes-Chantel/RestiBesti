@@ -38,6 +38,7 @@ const restaurantSchema = new Schema({
     type: String,
       },
   reviews: [reviewSchema],//One restaurant has many reviews
+  user: {type: Schema.Types.ObjectId, ref: 'User'},
 }, {
   timestamps: true
 });

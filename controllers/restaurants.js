@@ -3,15 +3,18 @@ const Restaurant = require("../models/restaurant");
 
 
 function create(req, res) {
+  req.body.user = req.user._id;
   const restaurant = new Restaurant(req.body);
+
+  
     restaurant.save(function(err) {
       // one way to handle errors
-      if (err) return res.render('restaurants/new');
-      console.log(restaurant);
+      if (err) return res.render('restaurants');
       // for now, redirect right back to new.ejs
-      res.redirect('/restaurants/new');
+      res.redirect('/restaurants/all');
     });
   };
+
 
   function update(req, res) {
     Restaurant.findOneAndUpdate(req.params.id,
@@ -64,6 +67,7 @@ function create(req, res) {
         });
     });
   }
+  
   
   module.exports = {
     new: newRes,

@@ -31,14 +31,7 @@ function deleteReview(req, res, next){
 }
 
 function create(req, res) {
-  // two things we need to know from the request?
-  // req.params.id = id of the movie we want to tadd the review to
-  // req.body - contents of the form, which is the review we want to add to the movie
-  //
-  // console.log(req.params.id)
-  // res.send('hello im hitting the create route in the reviews change me later')
-  // Find the movie from the database
-  // Movie.findById is a mongoose Method
+
   Restaurant?.findById(req.params.id, function (err, restaurantFromTheDatabase) {
     // add the review (req.body) to the restaurantFromTheDatabase
 
@@ -57,7 +50,7 @@ function create(req, res) {
     });
   });
 
-  // res.send('hello')
+ 
 
-  //
+  
 }

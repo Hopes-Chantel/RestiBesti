@@ -42,11 +42,11 @@
 
     <% } %>
 
-
-  <br> <br> <center> <a class="editRes" href="/restaurants/<%= restaurant._id %>/edit">Edit Restaurant</a> </br> </center> <br>
- <center> <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
+  <br> <br> <center> <a class="editRes" href="/restaurants/<%= restaurant?._id %>/edit">Edit Restaurant</a> </br> </center> <br>
+ <center> <form action="/restaurants/<%= restaurant?._id %>?_method=DELETE" method="POST">
     <input class="detail-button" type="submit" name="" value="Delete Restaurant">
 </form> </center>
+
 
     <% if (restaurant?.reviews.length) { %>
         <table>

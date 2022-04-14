@@ -4,30 +4,30 @@
 
 <body class="resBackground"></body>
   <h1 class="all">RestiBesti</h1>
-  <h2 class="all">A curated list of our favorite NYC restaurants</h2>
+  <h2 class="all">Curate a list of your favorite NYC restaurants</h2>
   <a href="/aboutus" class="aboutus">About Us</a>
   <h2 class="spontaneous">Feeling Spontaneous? Click below to generate a random restaurant for the night</h2>
   <a href="/roulette" class="spontaneous2">I'm feeling spontaneous 💃🕺</a><br>
   <body class="resBackground">
     <div class="container">
 
-  </thead>
-  <table>
-    <thead>
-        <tbody>
+    </thead>
+    <table>
+      <thead>
           <tbody>
-            <% restaurant.forEach(function(r) { %>
-              <tr>
-                    <td class="img"><%= r.name %></td>
-                    <td><a class="detail-button"href="/<%= r._id %>">Restaurant Details</a></td>
-                </tr>
-            <% }); %>    
+            <tbody>
+              <% restaurant.forEach(function(r) { %>
+                <tr>
+                  <% if (user && user._id.equals(r.user)) { %> 
+                      <td class="img"><%= r.name %></td>
+                      <td><a class="detail-button"href="/<%= r._id %>">Restaurant Details</a></td>
+                  </tr>
+                  <% }; %>   
+              <% }); %>    
+            
+          </tbody>
+      </table>
         </tbody>
     </table>
-      </tbody>
-  </table>
-  </div>
-
-
-
-
+    </div>
+  
