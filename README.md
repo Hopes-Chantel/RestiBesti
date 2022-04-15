@@ -1,6 +1,6 @@
 # RestiBesti
 
-#### Your friendly neighborhood restaurant app. Add your favorite restaurants and leave reviews.
+#### Your friendly NYC neighborhood restaurant app. Add your favorite restaurants and leave reviews.
 #### Additionally, if the user is feeling spontaneous, they can allow the app to chose a restaurant for them. 
 
 ## Screenshot(s): 
@@ -12,15 +12,15 @@
 ## Technologies Used:
 
 #### HTML, CSS and Javascript were the coding languages used. RestiBesti is a Full-stack CRUD appicationNode/Express/MongoDB app built from the ground up.
-#### RestiBesti also uses OAuth authentication to implement basic authorization that restricts access to features that need a logged in user (adding reviews, viewing restaurants).
+#### RestiBesti also uses OAuth authentication to implement basic authorization that restricts access to features that need a logged in user (adding reviews, viewing restaurants). Heroku was used for deployment.
 
 
 ## Getting Started:
 #### link to Trello: https://trello.com/b/h2ERjMOM/restibesti
 
-#### link to deployed applocation: 
+#### link to deployed applocation: https://restibesti.herokuapp.com
 
 ## Next Steps: 
 
-#### I would love to use an API or add links to where the user is able to be directed to GrubHub or Seamless where they can order their food. 
+#### I would love to use an API or add links to where the user is able to be directed to GrubHub or Seamless where they can order their food. I would also like to be able to access a larget database for city and states so users can use the dropdown to pick from places in their city.
 
