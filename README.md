@@ -7,7 +7,7 @@
 
 ##### ![landing page](https://i.ibb.co/q9hVh2t/Screen-Shot-2022-04-13-at-9-03-50-AM.png)
 ##### ![Main Restaurant Page](https://i.ibb.co/9bC9bwC/Screen-Shot-2022-04-13-at-9-04-17-AM.png)
-##### ![Add a Restaurant](https://i.ibb.co/PGcbpwS/Screen-Shot-2022-04-13-at-9-05-49-AM.png)
+##### ![Add a Restaurant](https://i.ibb.co/rmbJZZ0/Screen-Shot-2022-04-15-at-12-26-49-PM.png)
 
 ## Technologies Used:
 
