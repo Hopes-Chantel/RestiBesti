@@ -4,7 +4,7 @@ const Restaurant = require("../models/restaurant");
 
 function index(req, res) {
 
-    console.log(req.user, '< - req.user')
+    
     Restaurant.find({}, function (err, restaurants) {
         let resRandom = restaurants[Math.floor(Math.random()* restaurants.length)];
             res.render("restaurants/roulette", {

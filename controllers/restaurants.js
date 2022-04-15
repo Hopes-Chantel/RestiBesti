@@ -57,7 +57,7 @@ function create(req, res) {
 
   function index(req, res) {
   
-    console.log(req.user, '< - req.user')
+   
     Restaurant.find({}, function (err, restaurant) {
         res.render("index", {
           // <-  this refers to the view folder, to find the page we want to send
